@@ -13,7 +13,7 @@ import AddPatient_step2 from "./pages/add_patient_step2";
 import AddState from "./pages/add_state";
 import AddState2 from "./pages/add_state_step2";
 import AddState3 from "./pages/add_state_step3";
-
+import Main from './pages/Main';
 function App() {
 
   const [formData, setFormData] = useState({
@@ -62,7 +62,7 @@ function App() {
 
       <Route path="/add-state-step3" element={<AddState3 formData={formData} setFormData={setFormData} />} />
           
-
+      <Route path="/Main" element={<Main />} />
     </Routes>
   );
 }

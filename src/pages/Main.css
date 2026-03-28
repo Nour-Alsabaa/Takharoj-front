@@ -1,0 +1,223 @@
+/* الإعدادات العامة للواجهة */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafc;
+  overflow: hidden;
+}
+
+/* ---------------- المحتوى الرئيسي ---------------- */
+.main-content {
+  flex: 1;
+  position: relative;
+  background: linear-gradient(to bottom left, #ffffff, #eff6ff);
+  overflow-y: auto;
+}
+
+.bg-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg) scale(1.5);
+  width: 600px;
+  height: 600px;
+  border: 50px solid rgba(10, 29, 55, 0.03);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---------------- شريط البحث ---------------- */
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px 50px 16px 20px;
+  background-color: #0077c2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 4px rgba(0, 119, 194, 0.3);
+}
+
+.search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+/* ---------------- العنوان وزر الإضافة ---------------- */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0a1d37;
+  margin: 0;
+}
+
+.add-btn {
+  background-color: #8b6b9e;
+  color: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(139, 107, 158, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #7a5a8d;
+  transform: scale(1.05);
+}
+
+/* ---------------- قائمة المرضى (البطاقات) ---------------- */
+.patients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.patient-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #d1e9ff 0%, #eef7ff 100%);
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid #cce4fc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.patient-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 119, 194, 0.1);
+}
+
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.patient-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0a1d37;
+}
+
+.patient-details {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.patient-details p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.patient-code {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold !important;
+  color: #000;
+}
+
+.patient-age {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0a1d37;
+}
+/* ... أكوادك السابقة في ملف Main.css تبقى كما هي بالأسفل ... */
+
+/* ---------------- واجهة "لا توجد حالات" (إضافة جديدة) ---------------- */
+.no-patients-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* تمركز المحتوى عموديًا في منتصف الصفحة */
+  text-align: center;
+}
+
+.no-patients-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* مسافة بين النص والزر */
+}
+
+.no-patients-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.add-patient-inline-btn {
+  background-color: #f1f1f1; /* خلفية رمادية فاتحة */
+  color: #0077c2; /* نص أزرق مطابق لشريط البحث */
+  border: none;
+  padding: 15px 40px; /* حجم الزر */
+  border-radius: 50px; /* شكل بيضاوي تماماً */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.add-patient-inline-btn:hover {
+  background-color: #e2e8f0;
+  transform: scale(1.05);
+}
+
+/* ---------------- رسائل الحالة (إضافة جديدة) ---------------- */
+.status-message {
+  text-align: center;
+  font-size: 20px;
+  color: #0a1d37;
+  padding: 20px;
+}
+
+.error-message {
+  color: red;
+}
