@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Tahoma;
+  background: #f5f7fa;
+}
+
+/* الحاوية الرئيسية */
+.profile-container {
+  display: flex;
+  height: 100vh;        /* مهم جداً */
+  overflow: hidden;     /* يمنع السكرول */
+}
+
+/* ================= CONTENT ================= */
+.profile-content {
+  flex: 1;
+  padding: 3px 30px;
+  height: 100%;
+  overflow: hidden;   /* يمنع السكرول */
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  margin-bottom: 15px;
+}
+
+.profile-info h2,
+.profile-info p {
+  color: #0b4f6f;
+  text-align: center;
+  margin: 0px;
+}
+
+.doctor-name {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0b4f6f;
+  text-align: right;
+}
+
+.doctor-role {
+  color: #0b4f6f;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+/* ================= CONTENT UPDATE ================= */
+.profile-update-info {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* لتصغير الفراغ حتى ما يطلع سكرول */
+.profile-update-info h4 {
+  margin: 3px 0 10px;
+}
+
+/* ================= INPUTS ================= */
+
+.profile-input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.profile-input-group i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.profile-input-group input {
+  width: 90%;
+  padding: 10px 40px 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Save button */
+.profile-save-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.profile-save-btn {
+  background: #083a52;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-save-btn:hover {
+  background: #0b4f6f;
+}

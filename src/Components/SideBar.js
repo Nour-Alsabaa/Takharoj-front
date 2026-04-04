@@ -1,12 +1,15 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 
 export default function SideBar() {
+  const navigate = useNavigate();
   return (
     <aside className="w-[260px] bg-[#0a1d37] text-white flex flex-col p-6 z-10 shrink-0">
       
       {/* مساحة الشعار */}
       <div className="h-20 mb-6 flex items-center justify-center">
-        {/* يمكن وضع صورة الشعار هنا */}
+        <img className='syria-logo-add-patient-logo' src="/images/Emblem_of_Syria_(2025–present).svg.png" alt="My Image" />
       </div>
       
       {/* روابط القائمة */}
@@ -18,7 +21,7 @@ export default function SideBar() {
         </div>
 
         {/* العناصر غير النشطة */}
-        <div className="flex items-center gap-4 p-3 rounded-lg cursor-pointer text-slate-400 hover:bg-white/5 hover:text-white transition-all">
+        <div onClick={() => navigate("/doctor")} className="flex items-center gap-4 p-3 rounded-lg cursor-pointer text-slate-400 hover:bg-white/5 hover:text-white transition-all">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           <span>الملف الشخصي</span>
         </div>
@@ -31,4 +34,4 @@ export default function SideBar() {
 
     </aside>
   );
-}
+} 

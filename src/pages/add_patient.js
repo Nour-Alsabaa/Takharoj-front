@@ -9,23 +9,23 @@ export default function AddPatient() {
     <div className="add-patient-container"  dir="ltr">
       <div className="add-patient-left">
         <form className="add-patient-form">
-            <h3 className="add-patient-h3">اضافة مريض جديد</h3>
-            <div className="input-group">
+            <h3 className="add-patient-h3">إضافة مريض جديد</h3>
+            <div className="add-patient-input-group">
              <i className="fa-solid fa-user"></i>
              <input placeholder="اسم المريض"/>
             </div>
 
-            <div className="input-group">
+            <div className="add-patient-input-group">
              <i className="fa-solid fa-calendar BD-add-patient-icon"></i>
-             <input type="date" className="BD-add-patient-input"/>
+             <input type="date" className="BD-add-patient-input" placeholder="تاريخ الميلاد"/>
             </div>
 
-            <div className="input-group">
+            <div className="add-patient-input-group">
              <i className="fa-solid fa-id-card id-add-patient-icon"></i>
              <input className="id-add-patient-input" placeholder="الرقم الوطني" />
             </div>
 
-            <div className="input-group">
+            <div className="add-patient-input-group">
              <i className="fa-solid fa-phone phone-add-patient-icon"></i>
              <input className="phone-add-patient-input" placeholder="رقم الهاتف" />
             </div>

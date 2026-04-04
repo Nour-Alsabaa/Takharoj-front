@@ -1,0 +1,94 @@
+.patient-profile-container {
+  display: flex;
+  height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Content */
+.patient-profile-left {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+}
+.patient-profile-bg-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg) scale(1.5);
+  width: 400px;
+  height: 400px;
+  border: 50px solid rgba(10, 29, 55, 0.03);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header */
+.patient-profile-span{
+    color: #0b2c4a;
+    font-weight: 500;
+    font-size: 25px;
+}
+.patient-profile-name {
+    color: #0b2c4a;
+    margin-bottom: 5px;  
+}
+.patient-profile-social-status , .patient-profile-gender{
+    width: 20px;
+    height: 20px;
+    background-color: #0b2c4a;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Personal Info */
+.patient-profile-info {
+  background: #eee6f0;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.patient-profile-info-title , .patient-profile-visits-title {
+  text-align: right;
+  margin-bottom: 15px;
+  color: #0b2c4a;
+  font-size: 30px;
+  font-weight: 700;
+}
+.patient-profile-info-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.patient-profile-info-span{
+    margin: 0px 20px  ;
+}
+
+/* Visits */
+.patient-profile-visits {
+  margin-top: 20px;
+}
+.patient-profile-visit-card {
+  display: flex;
+  justify-content: space-between;
+  background: #c7d7ea;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  direction: rtl;
+}
+
+/* Floating Button */
+.patient-profile-visit-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #8c6f91;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+}

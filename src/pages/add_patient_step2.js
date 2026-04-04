@@ -8,14 +8,14 @@ export default function AddPatient_step2() {
     <div className="add-patient-container"  dir="ltr">
       <div className="add-patient-left">
         <form className="add-patient-form">
-            <h3 className="add-patient-h3">اضافة مريض جديد</h3>
-            <div className="input-group">
+            <h3 className="add-patient-h3">إضافة مريض جديد</h3>
+            <div className="add-patient-input-group">
              <i class="fas fa-map-marker"></i>
              <input placeholder="عنوان السكن"/>
             </div>
 
 
-            <div className="input-group">
+            <div className="add-patient-input-group">
              <i class="fas fa-map-marker"></i>
              <input className="id-add-patient-input" placeholder="عنوان العمل" />
             </div>

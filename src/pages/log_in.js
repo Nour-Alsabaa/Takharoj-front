@@ -33,7 +33,8 @@
 
             <div className="pass-row">
               <input
-                placeholder="كلمة المرور"
+                placeholder="كلمة المرور" 
+                autoComplete="new-password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 type={show ? 'text' : 'password'}
