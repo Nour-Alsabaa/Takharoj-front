@@ -1,0 +1,173 @@
+/* استيراد خط تجوال لتطابق التصميم */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+.support-container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  font-family: 'Tajawal', system-ui, sans-serif;
+}
+
+.support-main {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+}
+
+.support-watermark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.messages-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 3rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+.message-user {
+  align-self: flex-start; 
+}
+
+.message-support {
+  align-self: flex-end; 
+}
+
+.message-bubble {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border: 1px solid #f3f4f6;
+}
+
+.bubble-user {
+  background-color: #e2e4e6;
+  color: #1a1a1a;
+  border-top-right-radius: 0.125rem; 
+}
+
+.bubble-support {
+  background-color: #cce2ff;
+  color: #1a1a1a;
+  border-top-left-radius: 0.125rem; 
+}
+
+.message-footer {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.footer-user {
+  align-self: flex-start;
+  text-align: right;
+}
+
+.footer-support {
+  align-self: flex-end;
+  text-align: left;
+}
+
+.input-area {
+  padding: 2rem;
+  padding-bottom: 3rem;
+  background-color: transparent;
+  z-index: 10;
+}
+
+/* تعديل شكل مربع الإدخال */
+.input-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1479c9;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  
+  /* جعل الزاوية السفلية اليسرى حادة ليخرج منها الذيل 
+     (أعلى-يمين، أعلى-يسار، أسفل-يسار، أسفل-يمين) */
+  border-radius: 30px 30px 30px 0px;
+  
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  /* إعطاء مسافة أكبر من اليسار ليستوعب حجم الذيل */
+  margin: 0 1rem 0 3.5rem; 
+}
+
+/* الذيل الممتد لليسار بحجم أكبر باستخدام تقنية التدرج الدائري */
+.input-form::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -40px; /* تمديد الذيل لليسار بمقدار 40 بكسل */
+  width: 40px;
+  height: 40px;
+  /* رسم انحناء مقعر دقيق يفصل الخلفية الشفافة عن اللون الأزرق */
+  background: radial-gradient(circle at top left, transparent 39px, #1479c9 40px);
+  z-index: 1;
+}
+
+.chat-input {
+  flex: 1;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  z-index: 2;
+}
+
+.chat-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.send-button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: #8b7999;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  
+  /* التعديلات الجديدة لجلوس الزر فوق الذيل */
+  position: relative;
+  z-index: 3; /* ضمان بقاء الزر فوق الذيل */
+  margin-left: -4.5rem; /* سحب الزر لليسار ليستقر فوق الذيل تماماً */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* زيادة ظل الزر لجعله بارزاً */
+}
+
+.send-button:hover {
+  background-color: #7a6a87;
+}

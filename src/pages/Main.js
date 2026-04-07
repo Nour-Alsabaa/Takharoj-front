@@ -87,7 +87,9 @@ export default function Main() {
                 </div>
                 <div className="patients-list">
                   {filteredPatients.map((patient) => (
-                    <div key={patient.id} className="patient-card">
+                    <div key={patient.id} 
+                    className="patient-card"
+                    onClick={() => navigate(`/patient-profile/${patient.id}`)}>
                       <div className="patient-info">
                         <h3 className="patient-name">{patient.name}</h3>
                         <div className="patient-details">
