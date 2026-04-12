@@ -50,17 +50,26 @@
   width: 100%;
 }
 
-.create-account-input-group input{
-  width:90%;
-  padding:16px;
+.create-account-input-group input,
+.create-account-input-group select {
+  width: 90%;
+  padding: 16px;
   margin-left: 20px;
-  border-radius:14px;
-  border:1.5px solid #e3edf5;
-  background:#f7fbff;
-  font-size:18px;
-  outline:none;
-  transition:.2s;
+  border-radius: 14px;
+  border: 1.5px solid #e3edf5;
+  background: #f7fbff;
+  font-size: 18px;
+  outline: none;
+  transition: .2s;
   text-align: right;
+  appearance: none; 
+}
+
+.create-account-input-group select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230b4f6f' height='20' viewBox='0 0 20 20' width='20'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 18px;
 }
 
 /* ICON */

@@ -64,22 +64,21 @@ h1.h2,h4{
   position:relative;
   display:flex;
   align-items:center;
-
   background:#f7fbff;
   border:1.5px solid #e3edf5;
   border-radius:14px;
-
   margin-bottom:18px;
 }
 
 .input-row input,
 .pass-row input{
   width:100%;
-  border:none;
   outline:none;
   background:transparent;
   font-size:16px;
   padding:16px 50px;
+  border-radius:14px;
+  border:1.5px solid #e3edf5;
 }
 /******************/
 .icon{
