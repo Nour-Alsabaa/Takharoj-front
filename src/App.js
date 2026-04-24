@@ -14,6 +14,7 @@ import AccountPasswords from "./pages/create_account_step2";
 import HospitalForm from "./pages/create_account_step3";
 import PatientProfile from "./pages/patient_profile";
 import Support from "./pages/support";
+import Admin_Main from "./pages/Admin_Main";
 // import SearchForAState from "./search_for_a_state";
 // import Support from "./support";
 
@@ -66,6 +67,8 @@ function App() {
      <Route path="/Support" element={<Support />} />
 
      <Route path="/patient-profile/:id" element={<PatientProfile />} />
+
+     <Route path="/Admin_Main" element={<Admin_Main />} />
 
       {/* <Route path="/search" element={<SearchForAState />} /> */}
 
