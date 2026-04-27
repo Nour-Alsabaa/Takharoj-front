@@ -1,0 +1,96 @@
+.accounts_manager_container {
+  display: flex;
+  height: 100vh;
+  font-family: Tahoma;
+  background: #f5f7fa;
+}
+
+/* LEFT SIDE */
+.accounts_manager_left {
+  flex: 1;
+  padding: 40px;
+  position: relative;
+}
+
+/* HEADER */
+.accounts_manager_left h1 {
+  font-size: 32px;
+  color: #123a52;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+/* LOGO (أقصى اليسار) */
+.accounts_manager_purple_line {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  width: 80px;
+  height: 150px;
+  border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+  background-color: rgb(231, 177, 231);
+}
+
+/* CARDS CONTAINER */
+.accounts_manager_stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+/* CARD */
+.accounts_manager_card {
+  width: 220px;
+  height: 300px;
+  background: #cdebfa;
+  border-radius: 18px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.1),
+    0 4px 10px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.accounts_manager_card i {
+  font-size: 70px;
+  color: #1b2b3a;
+}
+.accounts_manager_icon_circle{
+  width: 120px;
+  height: 120px;
+  background: #cdebfa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #1b2b3a;
+}
+
+/* HOVER */
+.accounts_manager_card:hover{
+  transform: translateY(-8px) scale(1.03);
+  background: #92b3d3;
+}
+.accounts_manager_card:hover .accounts_manager_icon_circle{
+  background: #92b3d3;
+}
+
+/* RIGHT SIDE (SIDEBAR) */
+.accounts_manager_right {
+  width: 260px;
+}
+.accounts_manager_card p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1b2b3a;
+}

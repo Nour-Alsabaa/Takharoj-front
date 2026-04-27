@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Tahoma;
+  background: #f5f7fa;
+}
+
+/* الحاوية الرئيسية */
+.admin-profile-container {
+  display: flex;
+  height: 100vh;        /* مهم جداً */
+  overflow: hidden;     /* يمنع السكرول */
+}
+
+/* ================= CONTENT ================= */
+.admin-profile-content {
+  flex: 1;
+  padding: 3px 30px;
+  height: 100%;
+  overflow: hidden;   /* يمنع السكرول */
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-profile-info h1{
+  color: #0b4f6f;
+}
+
+.admin_profile_purple_line {
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  width: 80px;
+  height: 150px;
+  border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+  background-color: rgb(231, 177, 231);
+}
+
+.admin-profile-info {
+  margin-bottom: 15px;
+}
+
+.admin-profile-info h2,
+.admin-profile-info p {
+  color: #0b4f6f;
+  text-align: center;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.admin-profile-name {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #9b11a2;
+  text-shadow: 1px 1px 2px rgba(241, 202, 241, 0.84);
+  text-align: right;
+}
+
+.admin-profile-role {
+  color: #0b4f6f;
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* ================= CONTENT UPDATE ================= */
+.admin-profile-update-info {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* لتصغير الفراغ حتى ما يطلع سكرول */
+.admin-profile-update-info h4 {
+  margin: 3px 0 10px;
+  font-weight: bold;
+}
+
+/* ================= INPUTS ================= */
+
+.admin-profile-input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.admin-profile-input-group i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.admin-profile-input-group input {
+  width: 90%;
+  padding: 10px 40px 10px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Save button */
+.admin-profile-save-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.admin-profile-save-btn {
+  background: #083a52;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-profile-save-btn:hover {
+  background: #0b4f6f;
+}

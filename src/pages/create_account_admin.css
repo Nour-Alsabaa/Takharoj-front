@@ -1,0 +1,188 @@
+.create-account-admin-container{
+  display:flex;
+  height:100vh;
+  font-family:Tahoma;
+}
+
+/* LEFT FORM */
+.create-account-admin-left{
+  width:40%;
+  height: 700px;
+  background:#f4f7fb;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border: solid 1px white;
+  border-radius: 2px;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+/* FORM */
+.create-account-admin-form{
+  width:500px;
+  height: 600px;
+  max-width:90%;
+  background:white;
+  border-radius:22px;
+  box-shadow:
+  0 30px 60px rgba(11,79,111,0.08),
+  0 6px 18px rgba(11,79,111,0.05);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* TITLE */
+.create-account-admin-h3{
+  text-align:center;
+  font-size:32px;
+  font-weight:800;
+  color:#123a52;
+  margin:15px 0px 40px;
+}
+
+
+/* INPUT GROUP */
+.create-account-admin-input-group{
+  position: relative;
+  width: 100%;
+}
+
+.create-account-admin-input-group input,
+.create-account-admin-input-group select {
+  width: 90%;
+  padding: 16px;
+  margin-left: 20px;
+  border-radius: 14px;
+  border: 1.5px solid #e3edf5;
+  background: #f7fbff;
+  font-size: 18px;
+  outline: none;
+  transition: .2s;
+  text-align: right;
+  appearance: none; 
+}
+
+.create-account-admin-input-group select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%230b4f6f' height='20' viewBox='0 0 20 20' width='20'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: left 10px center;
+  background-size: 18px;
+}
+
+/* ICON */
+.create-account-admin-input-group i{
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: larger;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  display: block;
+}
+
+.create-account-admin-checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* المحتوى بأقصى اليمين*/
+  gap: 10px;
+  margin-top: 10px;
+}
+.create-account-admin-checkbox {
+  width: 35px;
+  height: 35px;
+  cursor: pointer; 
+  margin-right: 50px;
+  accent-color: #0b4f6f;
+}
+.create-account-admin-checkbox-span {
+  font-size: 20px;
+  color: #4d4444;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.create-account-admin-submit , .create-account-admin-step2-submit{
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:#0b4f6f;
+  color:#fff;
+  font-size:20px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.2s;
+  margin-top: 22px;
+}
+.create-account-admin-submit{
+  transform:translateY(-2px);
+  box-shadow:0 10px 22px rgba(11,79,111,0.18);
+}
+
+a{
+  color: purple;
+  text-decoration: underline;
+}
+a:hover{
+  color:#0b4f6f;
+  text-decoration: none;
+}
+
+/* RIGHT IMAGE */
+.create-account-admin-right{
+  width:25%;
+  height: 650px;
+  background-image: url("../images/Rectangle_1.jpg");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* logo */
+.syria-logo-create-account-admin-logo{
+  width:120px;
+  margin-bottom:20px;
+  margin: auto;
+}
+.create-account-admin-title{
+  font-size:30px;
+  color:white;
+  font-weight:800;
+  margin:15px 0;
+}
+
+.create-account-admin-sub{
+  color:white;
+  font-weight:700;
+  margin:3px 0;
+}
+/* for create-account-admin-step2 Interface */
+.create-account-admin-step2-h4{
+  text-align:right;
+  font-size:24px;
+  font-weight:700;
+  color: rgb(50, 153, 50);
+  margin:0px 0px 20px;
+}
+.create-account-admin-step2-submit{
+  margin-top: 200px;
+}
+
+
+
+
+
