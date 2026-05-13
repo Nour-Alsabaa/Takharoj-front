@@ -17,7 +17,7 @@ import Support from "./pages/support";
 import Admin_Main from "./pages/Admin_Main";
 // import SearchForAState from "./search_for_a_state";
 // import Support from "./support";
-
+import AdminAccountCenter from "./pages/Admin Account center";
 function App() {
 
   const [formData, setFormData] = useState({
@@ -69,6 +69,8 @@ function App() {
      <Route path="/patient-profile/:id" element={<PatientProfile />} />
 
      <Route path="/Admin_Main" element={<Admin_Main />} />
+
+     <Route path="/AdminAccountCenter" element={<AdminAccountCenter />} />
 
       {/* <Route path="/search" element={<SearchForAState />} /> */}
 

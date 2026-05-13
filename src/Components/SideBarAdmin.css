@@ -1,0 +1,53 @@
+.syria-logo-sidebar-logo {
+  width: 120px;     
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+aside{
+    height: 100vh;
+}
+
+/* العنصر العام */
+.sidebar-item {
+  display: flex;
+  flex-direction: row-reverse; /* الأيقونة يمين */
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #ffffff; 
+  font-size: 23px;
+  font-weight: 500;
+  transition: 0.3s;
+
+}
+
+/* الأيقونات */
+.sidebar-item i {
+  font-size: 20px;
+  color: #38bdf8;
+  transition: 0.3s;
+}
+
+/* hover للعناصر العادية فقط */
+.sidebar-item:hover {
+  background: rgba(138, 121, 121, 0.207);
+}
+
+/* العنصر النشط */
+.active-item {
+  background: #d1f1fc;
+}
+
+/*  منع أي hover على العنصر النشط */
+.active-item:hover {
+  background: #d1f1fc;
+  color: #ffffff;
+}
+.active-item:hover i {
+  color: #38bdf8;
+}
+
